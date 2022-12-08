@@ -1,0 +1,14 @@
+import random
+x=random.randint(90,100)
+ans=0
+count=0
+while ans!=x:
+    ans=int(input("Enter a number between 90 and 100:"))
+    count=count+1
+    counts=str(count)
+    if ans<x:
+        print("You guessed too low")
+    elif ans>x:
+        print("you guessed too high")
+    else:
+        print("Congratulations! You guessed the correct number with "+counts+" trials")
